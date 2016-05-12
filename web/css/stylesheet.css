@@ -20,6 +20,7 @@
 	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
 
 }
+
 .navbar-default .navbar-brand {
 	color: white;
 	font-size: 18px;
@@ -28,7 +29,11 @@
 .navbar-default .navbar-nav > li > a {
 	/*color: white;*/
 }
+.trek {
+margin-top: 10px;
 
+
+}
 .navbar {
 	background-color: #58c4b8;
 	color: white;
