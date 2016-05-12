@@ -15,7 +15,7 @@ user_register:
     defaults: { _controller: AppBundle:Registration:register }
 
 user_login:
-    path:     /user/login
+    path:     user/login
     defaults: { _controller: AppBundle:Security:login }
 
 user_login_check:
