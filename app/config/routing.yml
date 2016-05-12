@@ -21,3 +21,13 @@ user_login:
 user_login_check:
     path:    /user/login/check
     defaults: { _controller: AppBundle:Security:check }
+
+user_login_check:
+    path:    /user/login/check
+    defaults: { _controller: AppBundle:Security:check } 
+
+user_parcours:
+    path:    /user/parcours
+    defaults: { _controller: AppBundle:Parcours:index } 
+
+  

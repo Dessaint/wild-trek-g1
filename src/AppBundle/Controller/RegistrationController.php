@@ -21,7 +21,8 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use FOS\UserBundle\Model\UserInterface;
-use AppBundle\Entity\datauser;
+use AppBundle\Entityl\Datauser;
+
 
 /**
  * Controller managing the registration
@@ -67,20 +68,6 @@ class RegistrationController extends Controller
             }
 
             $dispatcher->dispatch(FOSUserEvents::REGISTRATION_COMPLETED, new FilterUserResponseEvent($user, $request, $response));
-
-            $em = $this->getDoctrine()->getManager();
-
-
-            $datauser = new datauser();
-            $datauser->setiduser($user->getId());
-            $datauser->setAge($age);
-            $datauser->setPrenom($prenom);
-            $datauser->setNom($nom);
-            $datauser->setSexe($sexe);
-
-
-            $em->persist($datauser);
-            $em->flush();
 
             return $response;
         }
