@@ -63,6 +63,13 @@ class Parcours
      */
     private $heureArrivee;
 
+   /**
+     * @var int
+     *
+     * @ORM\Column(name="iduser", type="integer", nullable=true)
+     */
+    private $iduser;
+
 
     /**
      * Get id
@@ -210,5 +217,28 @@ class Parcours
     public function getHeureArrivee()
     {
         return $this->heureArrivee;
+    }
+
+    /**
+     * Set iduser
+     *
+     * @param integer $iduser
+     * @return Parcours
+     */
+    public function setIduser($iduser)
+    {
+        $this->iduser = $iduser;
+
+        return $this;
+    }
+
+    /**
+     * Get iduser
+     *
+     * @return integer 
+     */
+    public function getIduser()
+    {
+        return $this->iduser;
     }
 }
