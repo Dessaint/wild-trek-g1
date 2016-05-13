@@ -1,6 +1,40 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+<div class="col-md-12 ent_espace"><h3><b>{{ app.user.username }}</b>,vous pouvez modifier et creer un parcours.</h3></div>
+    <div class="col-md-12">
+                    <select name="discipline" id="discipline">
+                  
+                        <option selected value="trek">Trek</option>
+                        <option value="velo">Velo</option>
+                        <option value="cheval">Cheval</option>
+                
+                </select>
+            </div>
+            <div class="col-md-12">
+            <label for="depart">Depart :</label>
+            <input type="string" id="depart" name="depart" value="{{ request.depart }}"/>
+            </div>
+
+            <div class="col-md-12">
+            <label for="arrivée">Arrivée :</label>
+            <input type="string" id="arrivée" name="arrivée" value="{{ request.arrivée }}"/>
+            </div>
+
+            <div class="col-md-12">
+            <label for="avis">Avis</label>
+            <input type="integer" id="avis" name="avis" value="{{ request.avis }}"/>
+            </div>
+
+            <div class="col-md-12">
+            <label for="heure_depart">Heure_depart :</label>
+            <input type="string" id="heure_depart" name="heure_depart" value="{{ request.HeureDepart|date('Y-m-d') }}"/>
+            </div>
+
+             <div class="col-md-12">
+            <label for="heure_arrivee">Heure_arrivee:</label>
+            <input type="string" id="heure_arrivee" name="heure_arrivee" value="{{ request.HeureArrivee|date('Y-m-d')}}"/>
+            </div>
 
 
 
