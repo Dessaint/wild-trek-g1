@@ -19,13 +19,12 @@ security:
                 csrf_token_generator: security.csrf.token_manager
                 login_path:     user_login
                 check_path:     user_login_check
-<<<<<<< HEAD
+
                 default_target_path:     user_register
                 # if you are using Symfony < 2.8, use the following config instead:
                 # csrf_provider: form.csrf_provider
-=======
-                default_target_path:    user_register
->>>>>>> 0e7fb129b2b9e4c3f81bb4afeff4c9695fc5c8ee
+
+
 
             logout:       true
             anonymous:    true

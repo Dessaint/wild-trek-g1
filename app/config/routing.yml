@@ -19,7 +19,6 @@ user_login:
     defaults: { _controller: AppBundle:Security:login }
 
 user_login_check:
-<<<<<<< HEAD
     path:    /user/login/check
     defaults: { _controller: AppBundle:Security:check }
 
@@ -32,7 +31,3 @@ user_parcours:
     defaults: { _controller: AppBundle:Parcours:index } 
 
   
-=======
-    path:    user/login/check
-    defaults: { _controller: AppBundle:Security:check }
->>>>>>> 0e7fb129b2b9e4c3f81bb4afeff4c9695fc5c8ee
